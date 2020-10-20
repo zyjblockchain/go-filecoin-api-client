@@ -1,4 +1,4 @@
-module go-filecoin-api-client
+module github.com/zyjblockchain/go-filecoin-api-client
 
 go 1.12
 
