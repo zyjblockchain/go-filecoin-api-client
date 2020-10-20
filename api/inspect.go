@@ -2,7 +2,7 @@ package api
 
 import (
 	"context"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 )
 
 type InspectAPI HttpApi

@@ -2,9 +2,9 @@ package tests
 
 import (
 	"context"
+	"ecoin-api-client/api"
+	fopt "ecoin-api-client/options"
 	"github.com/stretchr/testify/require"
-	"go-filecoin-api-client/api"
-	fopt "go-filecoin-api-client/options"
 	"testing"
 )
 

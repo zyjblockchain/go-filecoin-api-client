@@ -2,7 +2,7 @@ package api
 
 import (
 	"context"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 )
 
 type MpoolAPI HttpApi
@@ -19,7 +19,7 @@ func (api *MpoolAPI) Ls(ctx context.Context) ([]iface.MessageDetail, error) {
 	return out, nil
 }
 
-func (api *MpoolAPI) Rm(ctx context.Context, msgid string) (error) {
+func (api *MpoolAPI) Rm(ctx context.Context, msgid string) error {
 	err := api.core().Request("mpool/rm").
 		Arguments(msgid).
 		Exec(ctx, nil)

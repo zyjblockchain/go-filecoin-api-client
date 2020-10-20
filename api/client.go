@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 	"io"
 	"mime/multipart"
 	"strconv"
@@ -123,7 +123,7 @@ func (api *ClientAPI) QueryStorageDeal(ctx context.Context, dealID string) (ifac
 	return out, nil
 }
 
-//TODO 
+//TODO
 func (api *ClientAPI) VerifyStorageDeal(ctx context.Context, dealID string) (iface.StorageDealVerify, error) {
 	var out iface.StorageDealVerify
 	return out, nil

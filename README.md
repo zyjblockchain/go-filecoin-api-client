@@ -1,4 +1,4 @@
-# go-filecoin-api-client
+# ecoin-api-client
 
 > An API Client For Filecoin
 
@@ -9,7 +9,7 @@
 ## Install
 
 ```sh
-go get github.com/arsyun/go-filecoin-api-client
+go get github.com/arsyun/ecoin-api-client
 ```
 
 ## Usage

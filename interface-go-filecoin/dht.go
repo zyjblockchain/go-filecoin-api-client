@@ -2,7 +2,7 @@ package iface
 
 import (
 	"context"
-	"go-filecoin-api-client/options"
+	"github.com/zyjblockchain/go-filecoin-api-client/options"
 )
 
 type DhtAPI interface {

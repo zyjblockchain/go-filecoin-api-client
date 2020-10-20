@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"go-filecoin-api-client/api"
+	"github.com/zyjblockchain/go-filecoin-api-client/api"
 )
 
 func main() {

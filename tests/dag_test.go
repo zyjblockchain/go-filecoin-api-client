@@ -3,7 +3,7 @@ package tests
 import (
 	"context"
 	"github.com/stretchr/testify/require"
-	"go-filecoin-api-client/api"
+	"github.com/zyjblockchain/go-filecoin-api-client/api"
 	"strings"
 	"testing"
 )

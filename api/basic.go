@@ -2,12 +2,12 @@ package api
 
 import (
 	"context"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 )
 
 type BasicAPI HttpApi
 
-func (api *BasicAPI) Daemon(ctx context.Context) (error) {
+func (api *BasicAPI) Daemon(ctx context.Context) error {
 	err := api.core().Request("daemon").
 		Exec(ctx, nil)
 	if err != nil {

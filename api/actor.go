@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 	"io"
 	"strings"
 )

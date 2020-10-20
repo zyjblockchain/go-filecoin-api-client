@@ -3,7 +3,7 @@ package api
 import (
 	"bytes"
 	"context"
-	fopt "go-filecoin-api-client/options"
+	fopt "github.com/zyjblockchain/go-filecoin-api-client/options"
 	"io"
 	"strings"
 )

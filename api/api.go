@@ -1,7 +1,7 @@
 package api
 
 import (
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 	"net/http"
 	gohttp "net/http"
 )

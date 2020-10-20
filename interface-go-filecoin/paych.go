@@ -2,7 +2,7 @@ package iface
 
 import (
 	"context"
-	fopt "go-filecoin-api-client/options"
+	fopt "github.com/zyjblockchain/go-filecoin-api-client/options"
 )
 
 type Paych struct {

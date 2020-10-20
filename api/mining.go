@@ -1,8 +1,8 @@
 package api
 
-import(
+import (
 	"context"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 )
 
 type MiningAPI HttpApi
@@ -22,7 +22,7 @@ func (api *MiningAPI) Once(ctx context.Context) (iface.BlockMsg, error) {
 	return out, nil
 }
 
-func (api *MiningAPI) SealNow(ctx context.Context) (error) {
+func (api *MiningAPI) SealNow(ctx context.Context) error {
 	err := api.core().Request("mining/seal-now").
 		Exec(ctx, nil)
 	if err != nil {
@@ -32,7 +32,7 @@ func (api *MiningAPI) SealNow(ctx context.Context) (error) {
 	return nil
 }
 
-func (api *MiningAPI) Start(ctx context.Context) (error) {
+func (api *MiningAPI) Start(ctx context.Context) error {
 	err := api.core().Request("mining/start").
 		Exec(ctx, nil)
 	if err != nil {
@@ -53,7 +53,7 @@ func (api *MiningAPI) Status(ctx context.Context) (iface.MiningStatusResult, err
 	return out, nil
 }
 
-func (api *MiningAPI) Stop(ctx context.Context) (error) {
+func (api *MiningAPI) Stop(ctx context.Context) error {
 	err := api.core().Request("mining/stop").
 		Exec(ctx, nil)
 	if err != nil {

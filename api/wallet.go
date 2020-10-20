@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	iface "go-filecoin-api-client/interface-go-filecoin"
+	iface "github.com/zyjblockchain/go-filecoin-api-client/interface-go-filecoin"
 	"io"
 	"mime/multipart"
 	"net/url"
@@ -29,7 +29,7 @@ func (api *WalletAPI) Balance(ctx context.Context, address string) (string, erro
 func (api *WalletAPI) Export(ctx context.Context, addrs ...string) (iface.WalletInfo, error) {
 	var out iface.WalletInfo
 
-	//join multiple wallet address: arg=addr1&arg=addr2 
+	//join multiple wallet address: arg=addr1&arg=addr2
 	values := make(url.Values)
 	for _, arg := range addrs {
 		values.Add("arg", arg)
